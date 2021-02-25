@@ -1,0 +1,35 @@
+.App {
+  text-align: center;
+}
+
+input {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+textarea {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  border: 1px solid #000000;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+button:active {
+  border: 1px solid #ffffff;
+  background-color: gray;
+  color: #ffffff;
+}

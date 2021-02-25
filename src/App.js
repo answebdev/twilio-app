@@ -9,10 +9,6 @@ class App extends Component {
     },
   };
 
-  handleForm = () => {
-    this.setState({ recipient: '', textmessage: '' });
-  };
-
   // Create for when user presses the button on the form, the text will be passed along
   sendText = () => {
     const { text } = this.state;
@@ -21,6 +17,11 @@ class App extends Component {
     fetch(
       `http://localhost:4000/send-text?recipient=${text.recipient}&textmessage=${text.textmessage}`
     ).catch((err) => console.error(err));
+  };
+
+  // Clear form.
+  handleForm = () => {
+    this.setState({ recipient: '', textmessage: '' });
   };
 
   render() {

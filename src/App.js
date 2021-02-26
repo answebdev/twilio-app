@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import '../src/styles/style.css';
 
 class App extends Component {
   state = {
@@ -31,18 +31,16 @@ class App extends Component {
       margin: '8px',
     };
 
-    const textArea = {
-      borderRadius: '4px',
-    };
-
     return (
       <div className='App'>
+        <h1 className='ym'>Your Message</h1>
         <form onSubmit={this.handleForm}>
           <div style={{ marginTop: 10 }}>
             <h2> Send Text Message </h2>
             <label> Your Phone Number </label>
             <br />
             <input
+              className='input'
               value={text.recipient}
               onChange={(e) =>
                 this.setState({ text: { ...text, recipient: e.target.value } })
@@ -52,9 +50,9 @@ class App extends Component {
             <label> Message </label>
             <br />
             <textarea
-              rows={3}
+              className='textarea'
+              rows={5}
               value={text.textmessage}
-              style={textArea}
               onChange={(e) =>
                 this.setState({
                   text: { ...text, textmessage: e.target.value },
@@ -62,7 +60,9 @@ class App extends Component {
               }
             />
             <div style={spacer} />
-            <button onClick={this.sendText}> Send Text </button>
+            <button className='send-btn' onClick={this.sendText}>
+              Send Text
+            </button>
           </div>
         </form>
       </div>

@@ -1,0 +1,65 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  font-family: "Roboto", sans-serif;
+  color: #eeeeee;
+  letter-spacing: 1px;
+  margin: 20px auto;
+  width: 80%;
+  text-align: center;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.ym {
+  font-family: "Dancing Script", cursive;
+  color: #eeeeee;
+  letter-spacing: 1px;
+}
+
+.input,
+.textarea {
+  padding: 5px 10px;
+  border: 1px solid #eeeeee;
+  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 50%;
+}
+
+.send-btn {
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #eeeeee;
+  background-color: #eeeeee;
+  color: #bf4080;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.send-btn:hover {
+  border: 1px solid #eeeeee;
+  color: #eeeeee;
+  background-color: #bf4080;
+}
+
+.send-btn:active {
+  border: 1px solid #eeeeee;
+  background-color: #73264d;
+  color: #eeeeee;
+}
+
+@media (min-width: 600px) {
+  .App {
+    width: 500px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
